@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
-import classes from "./AddUser.module.css";
+import "./AddUser.css"
 
 const AddUser = ({ onAddUser }) => {
   const [addUsername, setAddUsername] = useState("");
@@ -28,7 +28,7 @@ const AddUser = ({ onAddUser }) => {
   let disabledBtn = addUserHandler;
   return (
     <div>
-      <Card className={classes.input}>
+      <Card className="inputCard">
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
           <input
